@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17742D3820B36B2C00838E5B /* iOS_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */; };
-		17742D3D20B36B2C00838E5B /* iOS_UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D3C20B36B2C00838E5B /* iOS_UtilitiesTests.swift */; };
+		17742D3D20B36B2C00838E5B /* iOS_Utilities_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */; };
 		17742D3F20B36B2C00838E5B /* iOS_Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 17742D3120B36B2C00838E5B /* iOS_Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17742D5920B37A4900838E5B /* Broadcaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D5820B37A4900838E5B /* Broadcaster.swift */; };
 		17742D5B20B37AAD00838E5B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D5A20B37AAD00838E5B /* Keychain.swift */; };
@@ -54,8 +54,8 @@
 		17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOS_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17742D3120B36B2C00838E5B /* iOS_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Utilities.h; sourceTree = "<group>"; };
 		17742D3220B36B2C00838E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17742D3720B36B2C00838E5B /* iOS UtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS UtilitiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17742D3C20B36B2C00838E5B /* iOS_UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_UtilitiesTests.swift; sourceTree = "<group>"; };
+		17742D3720B36B2C00838E5B /* iOS Utilities Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Utilities Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Utilities_Tests.swift; sourceTree = "<group>"; };
 		17742D3E20B36B2C00838E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17742D5820B37A4900838E5B /* Broadcaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broadcaster.swift; sourceTree = "<group>"; };
 		17742D5A20B37AAD00838E5B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				17742D3020B36B2C00838E5B /* iOS Utilities */,
-				17742D3B20B36B2C00838E5B /* iOS UtilitiesTests */,
+				17742D3B20B36B2C00838E5B /* iOS Utilities Tests */,
 				17742D2F20B36B2C00838E5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */,
-				17742D3720B36B2C00838E5B /* iOS UtilitiesTests.xctest */,
+				17742D3720B36B2C00838E5B /* iOS Utilities Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,13 +136,13 @@
 			path = "iOS Utilities";
 			sourceTree = "<group>";
 		};
-		17742D3B20B36B2C00838E5B /* iOS UtilitiesTests */ = {
+		17742D3B20B36B2C00838E5B /* iOS Utilities Tests */ = {
 			isa = PBXGroup;
 			children = (
-				17742D3C20B36B2C00838E5B /* iOS_UtilitiesTests.swift */,
+				17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */,
 				17742D3E20B36B2C00838E5B /* Info.plist */,
 			);
-			path = "iOS UtilitiesTests";
+			path = "iOS Utilities Tests";
 			sourceTree = "<group>";
 		};
 		17742D5420B3795200838E5B /* Utilities */ = {
@@ -234,9 +234,9 @@
 			productReference = 17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		17742D3620B36B2C00838E5B /* iOS UtilitiesTests */ = {
+		17742D3620B36B2C00838E5B /* iOS Utilities Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17742D4520B36B2C00838E5B /* Build configuration list for PBXNativeTarget "iOS UtilitiesTests" */;
+			buildConfigurationList = 17742D4520B36B2C00838E5B /* Build configuration list for PBXNativeTarget "iOS Utilities Tests" */;
 			buildPhases = (
 				17742D3320B36B2C00838E5B /* Sources */,
 				17742D3420B36B2C00838E5B /* Frameworks */,
@@ -247,9 +247,9 @@
 			dependencies = (
 				17742D3A20B36B2C00838E5B /* PBXTargetDependency */,
 			);
-			name = "iOS UtilitiesTests";
+			name = "iOS Utilities Tests";
 			productName = "iOS UtilitiesTests";
-			productReference = 17742D3720B36B2C00838E5B /* iOS UtilitiesTests.xctest */;
+			productReference = 17742D3720B36B2C00838E5B /* iOS Utilities Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +284,7 @@
 			projectRoot = "";
 			targets = (
 				17742D2D20B36B2C00838E5B /* iOS Utilities */,
-				17742D3620B36B2C00838E5B /* iOS UtilitiesTests */,
+				17742D3620B36B2C00838E5B /* iOS Utilities Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17742D3D20B36B2C00838E5B /* iOS_UtilitiesTests.swift in Sources */,
+				17742D3D20B36B2C00838E5B /* iOS_Utilities_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17742D4520B36B2C00838E5B /* Build configuration list for PBXNativeTarget "iOS UtilitiesTests" */ = {
+		17742D4520B36B2C00838E5B /* Build configuration list for PBXNativeTarget "iOS Utilities Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17742D4620B36B2C00838E5B /* Debug */,
