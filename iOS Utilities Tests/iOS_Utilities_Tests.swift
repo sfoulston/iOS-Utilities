@@ -1,6 +1,6 @@
 //
-//  iOS_UtilitiesTests.swift
-//  iOS UtilitiesTests
+//  iOS_Utilities_Tests.swift
+//  iOS Utilities_Tests
 //
 //  Created by Stuart Foulston on 21/05/2018.
 //  Copyright © 2018 Stuart Foulston. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import iOS_Utilities
 
-class iOS_UtilitiesTests: XCTestCase {
+class iOS_Utilities_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
