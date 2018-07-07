@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17437A0120EEBBB800F07D77 /* GradientMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437A0020EEBBB800F07D77 /* GradientMaskView.swift */; };
+		17437A0320EEBBDE00F07D77 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437A0220EEBBDE00F07D77 /* GradientView.swift */; };
 		17742D3820B36B2C00838E5B /* iOS_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */; };
-		17742D3D20B36B2C00838E5B /* iOS_UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D3C20B36B2C00838E5B /* iOS_UtilitiesTests.swift */; };
+		17742D3D20B36B2C00838E5B /* iOS_Utilities_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */; };
 		17742D3F20B36B2C00838E5B /* iOS_Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 17742D3120B36B2C00838E5B /* iOS_Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17742D5920B37A4900838E5B /* Broadcaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D5820B37A4900838E5B /* Broadcaster.swift */; };
 		17742D5B20B37AAD00838E5B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D5A20B37AAD00838E5B /* Keychain.swift */; };
@@ -38,6 +40,9 @@
 		17742D8D20B3813A00838E5B /* NSMutableAttributedString+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D8C20B3813A00838E5B /* NSMutableAttributedString+Additions.swift */; };
 		17742D8F20B3815300838E5B /* Error+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D8E20B3815300838E5B /* Error+Additions.swift */; };
 		17742D9120B3816F00838E5B /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D9020B3816F00838E5B /* UITableView+Additions.swift */; };
+		17742DC020B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742DBF20B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift */; };
+		17742DC820B3A26200838E5B /* KeyboardObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742DC720B3A26200838E5B /* KeyboardObserving.swift */; };
+		17742DCA20B3A28A00838E5B /* SenderWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742DC920B3A28A00838E5B /* SenderWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17437A0020EEBBB800F07D77 /* GradientMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientMaskView.swift; sourceTree = "<group>"; };
+		17437A0220EEBBDE00F07D77 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOS_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17742D3120B36B2C00838E5B /* iOS_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Utilities.h; sourceTree = "<group>"; };
 		17742D3220B36B2C00838E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17742D3720B36B2C00838E5B /* iOS Utilities Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Utilities Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17742D3C20B36B2C00838E5B /* iOS_UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_UtilitiesTests.swift; sourceTree = "<group>"; };
+		17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Utilities_Tests.swift; sourceTree = "<group>"; };
 		17742D3E20B36B2C00838E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17742D5820B37A4900838E5B /* Broadcaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broadcaster.swift; sourceTree = "<group>"; };
 		17742D5A20B37AAD00838E5B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
@@ -85,6 +92,9 @@
 		17742D8C20B3813A00838E5B /* NSMutableAttributedString+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Additions.swift"; sourceTree = "<group>"; };
 		17742D8E20B3815300838E5B /* Error+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Additions.swift"; sourceTree = "<group>"; };
 		17742D9020B3816F00838E5B /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
+		17742DBF20B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewAnimationOptions+Additions.swift"; sourceTree = "<group>"; };
+		17742DC720B3A26200838E5B /* KeyboardObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserving.swift; sourceTree = "<group>"; };
+		17742DC920B3A28A00838E5B /* SenderWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				17742D3020B36B2C00838E5B /* iOS Utilities */,
-				17742D3B20B36B2C00838E5B /* iOS UtilitiesTests */,
+				17742D3B20B36B2C00838E5B /* iOS Utilities Tests */,
 				17742D2F20B36B2C00838E5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,13 +146,13 @@
 			path = "iOS Utilities";
 			sourceTree = "<group>";
 		};
-		17742D3B20B36B2C00838E5B /* iOS UtilitiesTests */ = {
+		17742D3B20B36B2C00838E5B /* iOS Utilities Tests */ = {
 			isa = PBXGroup;
 			children = (
-				17742D3C20B36B2C00838E5B /* iOS_UtilitiesTests.swift */,
+				17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */,
 				17742D3E20B36B2C00838E5B /* Info.plist */,
 			);
-			path = "iOS UtilitiesTests";
+			path = "iOS Utilities Tests";
 			sourceTree = "<group>";
 		};
 		17742D5420B3795200838E5B /* Utilities */ = {
@@ -157,6 +167,7 @@
 				17742D8E20B3815300838E5B /* Error+Additions.swift */,
 				17742D8C20B3813A00838E5B /* NSMutableAttributedString+Additions.swift */,
 				17742D7C20B37FD600838E5B /* SegueHandler.swift */,
+				17742DC920B3A28A00838E5B /* SenderWrapper.swift */,
 				17742D7E20B3802700838E5B /* StoryboardIdentifiable.swift */,
 				17742D8020B3804500838E5B /* String+Additions.swift */,
 				17742D6020B37C2300838E5B /* Timer+Additions.swift */,
@@ -164,6 +175,7 @@
 				17742D8A20B3811900838E5B /* UIButton+VerticalComponents.swift */,
 				17742D7420B37E8900838E5B /* UIImage+Additions.swift */,
 				17742D9020B3816F00838E5B /* UITableView+Additions.swift */,
+				17742DBF20B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -174,10 +186,13 @@
 				17742D6320B37CC200838E5B /* Off Screen Cell Registration */,
 				17742D6A20B37D8200838E5B /* FadingImageView.swift */,
 				17742D6E20B37E3E00838E5B /* HairlineView.swift */,
-				17742D7020B37E5F00838E5B /* SelfSizingContainerView.swift */,
-				17742D7220B37E7200838E5B /* TransparentNavigationBar.swift */,
+				17437A0220EEBBDE00F07D77 /* GradientView.swift */,
+				17437A0020EEBBB800F07D77 /* GradientMaskView.swift */,
+				17742DC720B3A26200838E5B /* KeyboardObserving.swift */,
 				17742D7620B37EC600838E5B /* MinimumHitTargetButton.swift */,
 				17742D7820B37EE100838E5B /* PassthroughView.swift */,
+				17742D7020B37E5F00838E5B /* SelfSizingContainerView.swift */,
+				17742D7220B37E7200838E5B /* TransparentNavigationBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,13 +326,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17742DCA20B3A28A00838E5B /* SenderWrapper.swift in Sources */,
 				17742D7120B37E5F00838E5B /* SelfSizingContainerView.swift in Sources */,
+				17437A0320EEBBDE00F07D77 /* GradientView.swift in Sources */,
 				17742D8F20B3815300838E5B /* Error+Additions.swift in Sources */,
 				17742D7320B37E7200838E5B /* TransparentNavigationBar.swift in Sources */,
 				17742D8D20B3813A00838E5B /* NSMutableAttributedString+Additions.swift in Sources */,
 				17742D6720B37D2B00838E5B /* OffScreenViewTableView.swift in Sources */,
+				17437A0120EEBBB800F07D77 /* GradientMaskView.swift in Sources */,
 				17742D8B20B3811900838E5B /* UIButton+VerticalComponents.swift in Sources */,
+				17742DC020B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift in Sources */,
 				17742D7920B37EE100838E5B /* PassthroughView.swift in Sources */,
+				17742DC820B3A26200838E5B /* KeyboardObserving.swift in Sources */,
 				17742D8720B380A900838E5B /* CharacterSet+Additions.swift in Sources */,
 				17742D5920B37A4900838E5B /* Broadcaster.swift in Sources */,
 				17742D9120B3816F00838E5B /* UITableView+Additions.swift in Sources */,
@@ -346,7 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17742D3D20B36B2C00838E5B /* iOS_UtilitiesTests.swift in Sources */,
+				17742D3D20B36B2C00838E5B /* iOS_Utilities_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
