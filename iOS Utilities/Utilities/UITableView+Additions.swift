@@ -10,6 +10,8 @@ import UIKit
 
 public extension UITableView {
 	
+	/// Uses layout constraints to automatically size the table's header view. Call this method within
+	/// `viewDidLayoutSubviews()` to ensure the header view is resized at appropriate times.
 	public func layoutTableHeaderView() {
 		guard let headerView = tableHeaderView else { return }
 		headerView.translatesAutoresizingMaskIntoConstraints = false
