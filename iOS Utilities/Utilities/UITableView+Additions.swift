@@ -19,7 +19,7 @@ public extension UITableView {
 		let widthConstraint = headerView.widthAnchor.constraint(equalToConstant: bounds.width)
 		
 		widthConstraint.isActive = true
-		let headerSize = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+		let headerSize = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
 		widthConstraint.isActive = false
 		
 		headerView.frame = CGRect(origin: .zero, size: headerSize)

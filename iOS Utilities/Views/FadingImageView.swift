@@ -21,13 +21,15 @@ public class FadingImageView: UIImageView {
 	
 	override public func awakeFromNib() {
 		super.awakeFromNib()
-		layer.minificationFilter = kCAFilterTrilinear
+		layer.minificationFilter = CALayerContentsFilter.trilinear
 	}
 	
 	// MARK: Changing the Image
 	
 	public func setImage(_ newImage: UIImage?, animated: Bool = false, duration: TimeInterval? = nil, completion: ((Bool) -> Void)? = nil) {
-		guard image != newImage, let superview = superview else { return }
+		guard image != newImage, let superview = superview else {
+			return
+		}
 		
 		if animated {
 			let transitionImageView = FadingImageView(frame: frame)
@@ -48,8 +50,7 @@ public class FadingImageView: UIImageView {
 				completion: { finished in
 					transitionImageView.removeFromSuperview()
 					completion?(finished)
-				}
-			)
+				})
 		}
 		
 		image = newImage
