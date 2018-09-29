@@ -27,7 +27,9 @@ open class FadingImageView: UIImageView {
 	// MARK: Changing the Image
 	
 	open func setImage(_ newImage: UIImage?, animated: Bool = false, duration: TimeInterval? = nil, completion: ((Bool) -> Void)? = nil) {
-		guard image != newImage, let superview = superview else { return }
+		guard image != newImage, let superview = superview else {
+			return
+		}
 		
 		if animated {
 			let transitionImageView = FadingImageView(frame: frame)

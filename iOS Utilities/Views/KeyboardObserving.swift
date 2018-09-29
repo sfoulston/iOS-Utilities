@@ -17,7 +17,10 @@ public protocol KeyboardObserving: class {
 	func startListeningForKeyboardNotifications()
 	func stopListeningForKeyboardNotifications()
 	
-	func updateSafeArea(forKeyboardFrame keyboardFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve)
+	func updateSafeArea(
+		forKeyboardFrame keyboardFrame: CGRect,
+		animationDuration: TimeInterval,
+		animationCurve: UIView.AnimationCurve)
 }
 
 @available(iOS 11.0, *)
@@ -29,8 +32,9 @@ public extension KeyboardObserving {
 			forName: UIResponder.keyboardWillChangeFrameNotification,
 			object: nil,
 			queue: .main,
-			using: { [weak self] notification in self?.keyboardWillChangeFrame(notification) }
-		)
+			using: { [weak self] notification in
+				self?.keyboardWillChangeFrame(notification)
+		})
 	}
 	
 	func stopListeningForKeyboardNotifications() {
@@ -46,20 +50,29 @@ public extension KeyboardObserving {
 private extension KeyboardObserving {
 	
 	func keyboardWillChangeFrame(_ notification: Notification) {
-		guard let userInfo = notification.userInfo else { return }
+		guard let userInfo = notification.userInfo else {
+			return
+		}
 		
 		// Don't do anything if the keyboard is not local to this app.
-		guard (userInfo[UIResponder.keyboardIsLocalUserInfoKey] as? Bool) != false else { return }
+		guard (userInfo[UIResponder.keyboardIsLocalUserInfoKey] as? Bool) != false else {
+			return
+		}
 		
 		// Only continue if we can get the keyboard frame.
-		guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+		guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+			return
+		}
 		
 		// Get the animation properties.
 		let animationDuration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval ?? 0
 		let animationCurveRaw = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int ?? UIView.AnimationCurve.easeOut.rawValue
 		let animationCurve = UIView.AnimationCurve(rawValue: animationCurveRaw) ?? .easeOut
 		
-		updateSafeArea(forKeyboardFrame: keyboardFrame, animationDuration: animationDuration, animationCurve: animationCurve)
+		updateSafeArea(
+			forKeyboardFrame: keyboardFrame,
+			animationDuration: animationDuration,
+			animationCurve: animationCurve)
 	}
 }
 
@@ -88,7 +101,6 @@ public extension KeyboardObserving where Self: UIViewController {
 				self.view.setNeedsLayout()
 				self.view.layoutIfNeeded()
 			},
-			completion: nil
-		)
+			completion: nil)
 	}
 }

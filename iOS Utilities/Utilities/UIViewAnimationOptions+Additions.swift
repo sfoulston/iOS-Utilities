@@ -10,8 +10,7 @@ import UIKit
 
 public extension UIView.AnimationOptions {
 	
-	/// Creates a `UIViewAnimationOptions` value from the specified
-	/// `UIViewAnimationCurve` value.
+	/// Creates a `UIViewAnimationOptions` value from the specified `UIViewAnimationCurve` value.
 	public init(curve: UIView.AnimationCurve) {
 		switch curve {
 		case .linear:

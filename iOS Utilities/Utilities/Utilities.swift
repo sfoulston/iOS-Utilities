@@ -120,3 +120,48 @@ public extension Double {
 	var week:		  TimeInterval { return TimeInterval(self * 604_800) }
 	var weeks:		  TimeInterval { return TimeInterval(self * 604_800) }
 }
+
+public extension Int {
+	var millisecondDuration:  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self / 1_000), unit: .seconds) }
+	var millisecondsDuration: Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self / 1_000), unit: .seconds) }
+	var secondDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .seconds) }
+	var secondsDuration:	  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .seconds) }
+	var minuteDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .minutes) }
+	var minutesDuration:	  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .minutes) }
+	var hourDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .hours) }
+	var hoursDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .hours) }
+	var dayDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 24), unit: .hours) }
+	var daysDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 24), unit: .hours) }
+	var weekDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 168), unit: .hours) }
+	var weeksDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 168), unit: .hours) }
+}
+
+public extension Float {
+	var millisecondDuration:  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self / 1_000), unit: .seconds) }
+	var millisecondsDuration: Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self / 1_000), unit: .seconds) }
+	var secondDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .seconds) }
+	var secondsDuration:	  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .seconds) }
+	var minuteDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .minutes) }
+	var minutesDuration:	  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .minutes) }
+	var hourDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .hours) }
+	var hoursDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self), unit: .hours) }
+	var dayDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 24), unit: .hours) }
+	var daysDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 24), unit: .hours) }
+	var weekDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 168), unit: .hours) }
+	var weeksDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: Double(self * 168), unit: .hours) }
+}
+
+public extension Double {
+	var millisecondDuration:  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self / 1_000, unit: .seconds) }
+	var millisecondsDuration: Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self / 1_000, unit: .seconds) }
+	var secondDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self, unit: .seconds) }
+	var secondsDuration:	  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self, unit: .seconds) }
+	var minuteDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self, unit: .minutes) }
+	var minutesDuration:	  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self, unit: .minutes) }
+	var hourDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self, unit: .hours) }
+	var hoursDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self, unit: .hours) }
+	var dayDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self * 24, unit: .hours) }
+	var daysDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self * 24, unit: .hours) }
+	var weekDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self * 168, unit: .hours) }
+	var weeksDuration:		  Measurement<UnitDuration> { return Measurement<UnitDuration>(value: self * 168, unit: .hours) }
+}
