@@ -12,9 +12,10 @@ public extension Timer {
 	
 	class func schedule(
 		after intervalFromNow: TimeInterval,
-		for runLoopMode: RunLoopMode = .commonModes,
-		handler: @escaping (Timer) -> Void
-		) -> Timer {
+		for runLoopMode: RunLoop.Mode = .common,
+		handler: @escaping (Timer) -> Void)
+		-> Timer
+	{
 		let fireDate = CFAbsoluteTimeGetCurrent() + intervalFromNow
 		let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0, { timer in handler(timer!) })!
 		CFRunLoopAddTimer(CFRunLoopGetCurrent(), timer, CFRunLoopMode(rawValue: runLoopMode.rawValue as CFString))
@@ -23,9 +24,10 @@ public extension Timer {
 	
 	class func schedule(
 		every interval: TimeInterval,
-		for runLoopMode: RunLoopMode = .commonModes,
-		handler: @escaping (Timer) -> Void
-		) -> Timer {
+		for runLoopMode: RunLoop.Mode = .common,
+		handler: @escaping (Timer) -> Void)
+		-> Timer
+	{
 		let fireDate = CFAbsoluteTimeGetCurrent() + interval
 		let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0, { timer in handler(timer!) })!
 		CFRunLoopAddTimer(CFRunLoopGetCurrent(), timer, CFRunLoopMode(rawValue: runLoopMode.rawValue as CFString))

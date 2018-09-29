@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class FadingImageView: UIImageView {
+open class FadingImageView: UIImageView {
 	
 	// MARK: Constants
 	
@@ -19,14 +19,14 @@ public class FadingImageView: UIImageView {
 	
 	// MARK: Lifecycle
 	
-	override public func awakeFromNib() {
+	override open func awakeFromNib() {
 		super.awakeFromNib()
-		layer.minificationFilter = kCAFilterTrilinear
+		layer.minificationFilter = .trilinear
 	}
 	
 	// MARK: Changing the Image
 	
-	public func setImage(_ newImage: UIImage?, animated: Bool = false, duration: TimeInterval? = nil, completion: ((Bool) -> Void)? = nil) {
+	open func setImage(_ newImage: UIImage?, animated: Bool = false, duration: TimeInterval? = nil, completion: ((Bool) -> Void)? = nil) {
 		guard image != newImage, let superview = superview else { return }
 		
 		if animated {
@@ -48,8 +48,7 @@ public class FadingImageView: UIImageView {
 				completion: { finished in
 					transitionImageView.removeFromSuperview()
 					completion?(finished)
-				}
-			)
+			})
 		}
 		
 		image = newImage

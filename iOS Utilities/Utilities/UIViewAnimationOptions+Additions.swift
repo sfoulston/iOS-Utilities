@@ -8,11 +8,11 @@
 
 import UIKit
 
-public extension UIViewAnimationOptions {
+public extension UIView.AnimationOptions {
 	
 	/// Creates a `UIViewAnimationOptions` value from the specified
 	/// `UIViewAnimationCurve` value.
-	public init(curve: UIViewAnimationCurve) {
+	public init(curve: UIView.AnimationCurve) {
 		switch curve {
 		case .linear:
 			self = .curveLinear

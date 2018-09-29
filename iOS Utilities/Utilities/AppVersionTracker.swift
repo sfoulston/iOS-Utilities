@@ -220,9 +220,7 @@ private extension AppVersionTracker {
 // MARK: - VersionRepresentable
 
 public protocol VersionRepresentable: ExpressibleByStringLiteral, CustomStringConvertible, CustomDebugStringConvertible, Comparable {
-	
 	init(_ versionString: String)
-	
 	var versionString: String { get }
 }
 
