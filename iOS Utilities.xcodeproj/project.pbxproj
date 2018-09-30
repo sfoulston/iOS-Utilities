@@ -45,6 +45,7 @@
 		17742DCA20B3A28A00838E5B /* SenderWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742DC920B3A28A00838E5B /* SenderWrapper.swift */; };
 		179AFA63215D17F200668FA3 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA48215D17F200668FA3 /* AngleGradientLayer.m */; };
 		179AFA64215D17F200668FA3 /* AngleGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 179AFA49215D17F200668FA3 /* AngleGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179FD5B9215CE64D007752DB /* RoundMaskable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FD5B8215CE64D007752DB /* RoundMaskable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		17742DC920B3A28A00838E5B /* SenderWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderWrapper.swift; sourceTree = "<group>"; };
 		179AFA48215D17F200668FA3 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
 		179AFA49215D17F200668FA3 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
+		179FD5B8215CE64D007752DB /* RoundMaskable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMaskable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				17742D7820B37EE100838E5B /* PassthroughView.swift */,
 				17742D7020B37E5F00838E5B /* SelfSizingContainerView.swift */,
 				17742D7220B37E7200838E5B /* TransparentNavigationBar.swift */,
+				179FD5B8215CE64D007752DB /* RoundMaskable.swift */,
 				179AFA47215D17F200668FA3 /* AngleGradientLayer */,
 			);
 			path = Views;
@@ -307,6 +310,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 17742D2420B36B2C00838E5B;
 			productRefGroup = 17742D2F20B36B2C00838E5B /* Products */;
@@ -361,6 +365,7 @@
 				17742D6920B37D5E00838E5B /* OffScreenViewCollectionView.swift in Sources */,
 				17742D8920B380E500838E5B /* Array+Additions.swift in Sources */,
 				17742D6B20B37D8200838E5B /* FadingImageView.swift in Sources */,
+				179FD5B9215CE64D007752DB /* RoundMaskable.swift in Sources */,
 				17742D7720B37EC600838E5B /* MinimumHitTargetButton.swift in Sources */,
 				17742D8520B3809200838E5B /* Date+ISO8601.swift in Sources */,
 				17742D8320B3807100838E5B /* TimeInterval+ISO8601.swift in Sources */,
