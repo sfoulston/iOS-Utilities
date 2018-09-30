@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 public protocol KeyboardObserving: class {
 	var keyboardObserver: NSObjectProtocol? { get set }
 	
@@ -22,6 +23,7 @@ public protocol KeyboardObserving: class {
 		animationCurve: UIView.AnimationCurve)
 }
 
+@available(iOS 11.0, *)
 public extension KeyboardObserving {
 	
 	func startListeningForKeyboardNotifications() {
@@ -44,6 +46,7 @@ public extension KeyboardObserving {
 
 // MARK: Helpers
 
+@available(iOS 11.0, *)
 private extension KeyboardObserving {
 	
 	func keyboardWillChangeFrame(_ notification: Notification) {
@@ -75,6 +78,7 @@ private extension KeyboardObserving {
 
 // MARK: UIViewController+KeyboardObserving
 
+@available(iOS 11.0, *)
 public extension KeyboardObserving where Self: UIViewController {
 	
 	public func updateSafeArea(forKeyboardFrame keyboardFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve) {

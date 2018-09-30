@@ -12,8 +12,8 @@ public struct Easing {
 	
 	// MARK: Types
 	
-	/// Standard easing functions available through the `Easing` class. These
-	/// are typical easing curves, rather than complex system responses.
+	/// Standard easing functions available through the `Easing` class. These are typical easing curves, rather than
+	/// complex system responses.
 	public enum Function {
 		case linear
 		case quadratic
@@ -321,7 +321,9 @@ private extension Easing {
 		}
 	}
 	
-	static func secondOrderSystemResponse(undampedNaturalFrequency omega: Double) -> (_ dampingRatio: Double) -> (_ t: Double) -> Double {
+	static func secondOrderSystemResponse(
+		undampedNaturalFrequency omega: Double)
+		-> (_ dampingRatio: Double) -> (_ t: Double) -> Double {
 		return { zeta in
 			return { t in
 				let beta = sqrt(1 - (zeta * zeta))
