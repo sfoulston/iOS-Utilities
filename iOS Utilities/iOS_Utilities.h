@@ -15,5 +15,4 @@ FOUNDATION_EXPORT double iOS_UtilitiesVersionNumber;
 FOUNDATION_EXPORT const unsigned char iOS_UtilitiesVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <iOS_Utilities/PublicHeader.h>
-
-
+#import <iOS_Utilities/AngleGradientLayer.h>

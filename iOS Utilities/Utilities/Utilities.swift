@@ -47,8 +47,8 @@ public func mustOverride(file: String = #file, line: UInt = #line, function: Str
 // MARK: - RawRepresentable
 
 public protocol CountedRawRepresentable: RawRepresentable {
-	
 	static var count: Int { get }
+	static var all: [Self] { get }
 }
 
 public extension CountedRawRepresentable where Self.RawValue == Int {
@@ -59,6 +59,10 @@ public extension CountedRawRepresentable where Self.RawValue == Int {
 			max += 1
 		}
 		return max
+	}
+	
+	static var all: [Self] {
+		return (0..<count).map { Self.init(rawValue: $0)! }
 	}
 }
 
