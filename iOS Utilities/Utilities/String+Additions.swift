@@ -14,12 +14,11 @@ public extension String {
 	
 	/// Create `Data` from hexadecimal string representation.
 	///
-	/// This takes a hexadecimal representation and creates a `Data` object.
-	/// Note, if the string has any spaces or non-hex characters (e.g. starts
-	/// with '<' and with a '>'), those are ignored and only hex characters are
+	/// This takes a hexadecimal representation and creates a `Data` object. Note, if the string has any spaces or
+	/// non-hex characters (e.g. starts with '<' and with a '>'), those are ignored and only hex characters are
 	/// processed.
 	///
-	/// - returns: Data represented by this hexadecimal string.
+	/// - Returns: Data represented by this hexadecimal string.
 	public func hexadecimalData() -> Data? {
 		var data = Data(capacity: count / 2)
 		
@@ -58,5 +57,19 @@ public extension String {
 		case .tail:
 			return self.prefix(characterLimit) + leader
 		}
+	}
+	
+	// MARK: HTML
+	
+	public func deletingHTMLTag(_ tag: String) -> String {
+		return self.replacingOccurrences(
+			of: "(?i)</?\(tag)\\b[^<]*>",
+			with: "",
+			options: .regularExpression,
+			range: nil)
+	}
+	
+	public func deletingHTMLTags(_ tags: [String]) -> String {
+		return tags.reduce(self) { $0.deletingHTMLTag($1) }
 	}
 }
