@@ -89,7 +89,7 @@ public extension KeyboardObserving where Self: UIViewController {
 		safeAreaFrame.size.height += additionalSafeAreaInsets.bottom
 		let intersection = safeAreaFrame.intersection(keyboardFrameInView)
 		
-		let options = UIView.AnimationOptions(curve: animationCurve).union([.beginFromCurrentState, .allowUserInteraction])
+		let options = (UIView.AnimationOptions(curve: animationCurve) ?? []).union([.beginFromCurrentState, .allowUserInteraction])
 		
 		// Animate the new safe area.
 		UIView.animate(
