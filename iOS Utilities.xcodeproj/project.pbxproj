@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17437A0120EEBBB800F07D77 /* GradientMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437A0020EEBBB800F07D77 /* GradientMaskView.swift */; };
 		17437A0320EEBBDE00F07D77 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17437A0220EEBBDE00F07D77 /* GradientView.swift */; };
+		1745EC69216A44C5006F4AC3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745EC68216A44C5006F4AC3 /* JSON.swift */; };
 		176677AD214B456A00F54B53 /* TimeInterval+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176677AC214B456A00F54B53 /* TimeInterval+Additions.swift */; };
 		17742D3820B36B2C00838E5B /* iOS_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */; };
 		17742D3D20B36B2C00838E5B /* iOS_Utilities_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17742D3C20B36B2C00838E5B /* iOS_Utilities_Tests.swift */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		17437A0020EEBBB800F07D77 /* GradientMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientMaskView.swift; sourceTree = "<group>"; };
 		17437A0220EEBBDE00F07D77 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		1745EC68216A44C5006F4AC3 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		176677AC214B456A00F54B53 /* TimeInterval+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Additions.swift"; sourceTree = "<group>"; };
 		17742D2E20B36B2C00838E5B /* iOS_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOS_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17742D3120B36B2C00838E5B /* iOS_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Utilities.h; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1745EC67216A44BB006F4AC3 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1745EC68216A44C5006F4AC3 /* JSON.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		17742D2420B36B2C00838E5B = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 				17742D3120B36B2C00838E5B /* iOS_Utilities.h */,
 				17742D3220B36B2C00838E5B /* Info.plist */,
 				17742D5420B3795200838E5B /* Utilities */,
+				1745EC67216A44BB006F4AC3 /* Types */,
 				17742D5520B3795D00838E5B /* Views */,
 				17742D5620B3796700838E5B /* Controllers */,
 			);
@@ -384,6 +395,7 @@
 				17742D6F20B37E3E00838E5B /* HairlineView.swift in Sources */,
 				17742D6D20B37DA300838E5B /* Utilities.swift in Sources */,
 				17742D5B20B37AAD00838E5B /* Keychain.swift in Sources */,
+				1745EC69216A44C5006F4AC3 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

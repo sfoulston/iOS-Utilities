@@ -8,10 +8,8 @@
 
 import UIKit
 
-/// A `UIButton` subclass that increases the hit target size to a minimum size.
-/// This is helpful for buttons where the bounds are small, and content insets
-/// aren't an appropriate mechanism for increasing the tappable area of the
-/// button.
+/// A `UIButton` subclass that increases the hit target size to a minimum size. This is helpful for buttons where the
+/// bounds are small, and content insets aren't an appropriate mechanism for increasing the tappable area of the button.
 @IBDesignable
 open class MinimumHitTargetButton: UIButton {
 	
