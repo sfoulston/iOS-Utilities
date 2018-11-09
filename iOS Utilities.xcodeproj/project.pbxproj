@@ -48,6 +48,7 @@
 		179AFA63215D17F200668FA3 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA48215D17F200668FA3 /* AngleGradientLayer.m */; };
 		179AFA64215D17F200668FA3 /* AngleGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 179AFA49215D17F200668FA3 /* AngleGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		179FD5B9215CE64D007752DB /* RoundMaskable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FD5B8215CE64D007752DB /* RoundMaskable.swift */; };
+		17E59C3521937B0100659DF6 /* UIImage+Orientation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E59C3421937B0100659DF6 /* UIImage+Orientation+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		179AFA48215D17F200668FA3 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
 		179AFA49215D17F200668FA3 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
 		179FD5B8215CE64D007752DB /* RoundMaskable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMaskable.swift; sourceTree = "<group>"; };
+		17E59C3421937B0100659DF6 /* UIImage+Orientation+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				17742D3120B36B2C00838E5B /* iOS_Utilities.h */,
 				17742D3220B36B2C00838E5B /* Info.plist */,
+				17E59C3321937A7F00659DF6 /* Extensions */,
 				17742D5420B3795200838E5B /* Utilities */,
 				1745EC67216A44BB006F4AC3 /* Types */,
 				17742D5520B3795D00838E5B /* Views */,
@@ -179,23 +182,10 @@
 			children = (
 				17742D6C20B37DA300838E5B /* Utilities.swift */,
 				17742D7A20B37F0C00838E5B /* AppVersionTracker.swift */,
-				17742D8820B380E500838E5B /* Array+Additions.swift */,
-				17742D8620B380A900838E5B /* CharacterSet+Additions.swift */,
-				17742D8420B3809200838E5B /* Date+ISO8601.swift */,
 				17742D5E20B37BB400838E5B /* Easing.swift */,
-				17742D8E20B3815300838E5B /* Error+Additions.swift */,
-				17742D8C20B3813A00838E5B /* NSMutableAttributedString+Additions.swift */,
 				17742D7C20B37FD600838E5B /* SegueHandler.swift */,
 				17742DC920B3A28A00838E5B /* SenderWrapper.swift */,
 				17742D7E20B3802700838E5B /* StoryboardIdentifiable.swift */,
-				17742D8020B3804500838E5B /* String+Additions.swift */,
-				17742D6020B37C2300838E5B /* Timer+Additions.swift */,
-				176677AC214B456A00F54B53 /* TimeInterval+Additions.swift */,
-				17742D8220B3807100838E5B /* TimeInterval+ISO8601.swift */,
-				17742D8A20B3811900838E5B /* UIButton+VerticalComponents.swift */,
-				17742D7420B37E8900838E5B /* UIImage+Additions.swift */,
-				17742D9020B3816F00838E5B /* UITableView+Additions.swift */,
-				17742DBF20B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -246,6 +236,27 @@
 				179AFA49215D17F200668FA3 /* AngleGradientLayer.h */,
 			);
 			path = AngleGradientLayer;
+			sourceTree = "<group>";
+		};
+		17E59C3321937A7F00659DF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17742D8820B380E500838E5B /* Array+Additions.swift */,
+				17742D8620B380A900838E5B /* CharacterSet+Additions.swift */,
+				17742D8420B3809200838E5B /* Date+ISO8601.swift */,
+				17742D8E20B3815300838E5B /* Error+Additions.swift */,
+				17742D8C20B3813A00838E5B /* NSMutableAttributedString+Additions.swift */,
+				17742D8020B3804500838E5B /* String+Additions.swift */,
+				17742D6020B37C2300838E5B /* Timer+Additions.swift */,
+				176677AC214B456A00F54B53 /* TimeInterval+Additions.swift */,
+				17742D8220B3807100838E5B /* TimeInterval+ISO8601.swift */,
+				17742D8A20B3811900838E5B /* UIButton+VerticalComponents.swift */,
+				17742D7420B37E8900838E5B /* UIImage+Additions.swift */,
+				17742D9020B3816F00838E5B /* UITableView+Additions.swift */,
+				17742DBF20B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift */,
+				17E59C3421937B0100659DF6 /* UIImage+Orientation+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +378,7 @@
 				17742D8D20B3813A00838E5B /* NSMutableAttributedString+Additions.swift in Sources */,
 				17742D6720B37D2B00838E5B /* OffScreenViewTableView.swift in Sources */,
 				17437A0120EEBBB800F07D77 /* GradientMaskView.swift in Sources */,
+				17E59C3521937B0100659DF6 /* UIImage+Orientation+Additions.swift in Sources */,
 				17742D8B20B3811900838E5B /* UIButton+VerticalComponents.swift in Sources */,
 				17742DC020B3A13B00838E5B /* UIViewAnimationOptions+Additions.swift in Sources */,
 				17742D7920B37EE100838E5B /* PassthroughView.swift in Sources */,
