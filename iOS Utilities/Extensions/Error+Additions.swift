@@ -18,4 +18,8 @@ public extension Error {
 			return false
 		}
 	}
+	
+	public var isCancelledRequestError: Bool {
+		return (self as NSError).code == NSURLErrorCancelled
+	}
 }
