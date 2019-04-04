@@ -19,7 +19,7 @@ public extension Error {
 		}
 	}
 	
-	public var isCancelledRequestError: Bool {
+	var isCancelledRequestError: Bool {
 		return (self as NSError).code == NSURLErrorCancelled
 	}
 }
