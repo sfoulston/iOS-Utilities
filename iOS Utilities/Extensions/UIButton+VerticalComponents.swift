@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIButton {
 	
-	public func centerComponentsVertically(withPadding padding: CGFloat) {
+	func centerComponentsVertically(withPadding padding: CGFloat) {
 		let imageSize = imageView?.frame.size ?? .zero
 		let titleSize = titleLabel?.frame.size ?? .zero
 		

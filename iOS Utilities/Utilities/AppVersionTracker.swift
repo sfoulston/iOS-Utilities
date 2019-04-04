@@ -234,23 +234,23 @@ public func ==<V: VersionRepresentable>(lhs: V, rhs: V) -> Bool {
 
 public extension VersionRepresentable {
 	
-	public init(stringLiteral value: String) {
+	init(stringLiteral value: String) {
 		self.init(value)
 	}
 	
-	public init(extendedGraphemeClusterLiteral value: String) {
+	init(extendedGraphemeClusterLiteral value: String) {
 		self.init(value)
 	}
 	
-	public init(unicodeScalarLiteral value: String) {
+	init(unicodeScalarLiteral value: String) {
 		self.init(value)
 	}
 	
-	public var description: String {
+	var description: String {
 		return versionString
 	}
 	
-	public var debugDescription: String {
+	var debugDescription: String {
 		return versionString
 	}
 }

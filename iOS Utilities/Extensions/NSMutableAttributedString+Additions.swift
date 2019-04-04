@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSMutableAttributedString {
 	
-	public func setFontFace(font: UIFont, color: UIColor? = nil) {
+	func setFontFace(font: UIFont, color: UIColor? = nil) {
 		beginEditing()
 		enumerateAttribute(.font, in: NSRange(location: 0, length: length)) { value, range, stop in
 			if let f = value as? UIFont, let newFontDescriptor = f.fontDescriptor.withFamily(font.familyName).withSymbolicTraits(f.fontDescriptor.symbolicTraits) {

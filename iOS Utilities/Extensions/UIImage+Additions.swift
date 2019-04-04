@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIImage {
 	
-	public static func pixel(color: UIColor = .black) -> UIImage {
+	static func pixel(color: UIColor = .black) -> UIImage {
 		return UIGraphicsImageRenderer(bounds: CGRect(x: 0, y: 0, width: 1, height: 1)).image { context in
 			color.setFill()
 			context.fill(context.format.bounds)

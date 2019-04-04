@@ -10,7 +10,7 @@ import Foundation
 
 public extension CharacterSet {
 	
-	public var allCharacters: [Character] {
+	var allCharacters: [Character] {
 		let allCharacters = (UInt8(0)...16).filter { hasMember(inPlane: $0) }.flatMap { (plane) -> [Character] in
 			let unicodeRange = (UInt32(plane) << 16)..<(UInt32(plane + 1) << 16)
 			return unicodeRange.compactMap { (unicode) -> Character? in
@@ -24,7 +24,7 @@ public extension CharacterSet {
 		return allCharacters
 	}
 	
-	public func randomString(length: Int) -> String {
+	func randomString(length: Int) -> String {
 		let characters = allCharacters
 		let numberOfCharacters = characters.count
 		let randomString = (0..<length).reduce(into: "") { (string, _) in

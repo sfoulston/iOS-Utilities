@@ -64,24 +64,24 @@ public extension Keychain {
 	// MARK: Working with Arbitrary Data
 	
 	@discardableResult
-	public class func saveData(_ data: Data, forIdentifier identifier: String, service: String? = nil) -> NSError? {
+	class func saveData(_ data: Data, forIdentifier identifier: String, service: String? = nil) -> NSError? {
 		let saveRequest = KeychainRequest(userAccount: identifier, type: .create, data: data, service: service)
 		return Keychain.perform(saveRequest).error
 	}
 	
-	public class func loadData(forIdentifier identifier: String, service: String? = nil) -> (data: Data?, error: NSError?) {
+	class func loadData(forIdentifier identifier: String, service: String? = nil) -> (data: Data?, error: NSError?) {
 		let readRequest = KeychainRequest(userAccount: identifier, type: .read, service: service)
 		return Keychain.perform(readRequest)
 	}
 	
 	@discardableResult
-	public class func updateData(_ data: Data, forIdentifier identifier: String, service: String? = nil) -> NSError? {
+	class func updateData(_ data: Data, forIdentifier identifier: String, service: String? = nil) -> NSError? {
 		let updateRequest = KeychainRequest(userAccount: identifier, type: .update, data: data, service: service)
 		return Keychain.perform(updateRequest).error
 	}
 	
 	@discardableResult
-	public class func deleteData(forIdentifier identifier: String, service: String? = nil) -> NSError? {
+	class func deleteData(forIdentifier identifier: String, service: String? = nil) -> NSError? {
 		let deleteRequest = KeychainRequest(userAccount: identifier, type: .delete, service: service)
 		return Keychain.perform(deleteRequest).error
 	}
@@ -89,25 +89,25 @@ public extension Keychain {
 	// MARK: Working with Passwords
 	
 	@discardableResult
-	public class func savePassword(_ password: String, forUserAccount userAccount: String, service: String? = nil) -> NSError? {
+	class func savePassword(_ password: String, forUserAccount userAccount: String, service: String? = nil) -> NSError? {
 		let saveRequest = KeychainRequest(userAccount: userAccount, type: .create, data: password as Keychain.Data?, service: service)
 		return Keychain.perform(saveRequest).error
 	}
 	
-	public class func loadPassword(forUserAccount userAccount: String, service: String? = nil) -> (password: String?, error: NSError?) {
+	class func loadPassword(forUserAccount userAccount: String, service: String? = nil) -> (password: String?, error: NSError?) {
 		let readRequest = KeychainRequest(userAccount: userAccount, type: .read, service: service)
 		let (data, error) = Keychain.perform(readRequest)
 		return (password: data as? String, error)
 	}
 	
 	@discardableResult
-	public class func updatePassword(_ password: String, forUserAccount userAccount: String, service: String? = nil) -> NSError? {
+	class func updatePassword(_ password: String, forUserAccount userAccount: String, service: String? = nil) -> NSError? {
 		let updateRequest = KeychainRequest(userAccount: userAccount, type: .update, data: password as Keychain.Data?, service: service)
 		return Keychain.perform(updateRequest).error
 	}
 	
 	@discardableResult
-	public class func deletePassword(forUserAccount userAccount: String, service: String? = nil) -> NSError? {
+	class func deletePassword(forUserAccount userAccount: String, service: String? = nil) -> NSError? {
 		let deleteRequest = KeychainRequest(userAccount: userAccount, type: .delete, service: service)
 		return Keychain.perform(deleteRequest).error
 	}
@@ -115,7 +115,7 @@ public extension Keychain {
 	// MARK: Empty the Keychain
 	
 	@discardableResult
-	public class func empty() -> NSError? {
+	class func empty() -> NSError? {
 		// For each of the sec class types, delete all of the saved items of that type
 		let classes = [kSecClassGenericPassword, kSecClassInternetPassword, kSecClassCertificate, kSecClassKey, kSecClassIdentity]
 		let errors: [NSError?] = classes.map {

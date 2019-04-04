@@ -19,7 +19,7 @@ public extension String {
 	/// processed.
 	///
 	/// - Returns: Data represented by this hexadecimal string.
-	public func hexadecimalData() -> Data? {
+	func hexadecimalData() -> Data? {
 		var data = Data(capacity: count / 2)
 		
 		let regex = try! NSRegularExpression(pattern: "[0-9a-f]{1,2}", options: .caseInsensitive)
@@ -38,13 +38,13 @@ public extension String {
 	
 	// MARK: Truncation
 	
-	public enum TruncationPosition {
+	enum TruncationPosition {
 		case head
 		case middle
 		case tail
 	}
 	
-	public func truncated(characterLimit: Int, position: TruncationPosition = .tail, leader: String = "…") -> String {
+	func truncated(characterLimit: Int, position: TruncationPosition = .tail, leader: String = "…") -> String {
 		guard count > characterLimit else { return self }
 		
 		switch position {
@@ -61,7 +61,7 @@ public extension String {
 	
 	// MARK: HTML
 	
-	public func deletingHTMLTag(_ tag: String) -> String {
+	func deletingHTMLTag(_ tag: String) -> String {
 		return self.replacingOccurrences(
 			of: "(?i)</?\(tag)\\b[^<]*>",
 			with: "",
@@ -69,7 +69,7 @@ public extension String {
 			range: nil)
 	}
 	
-	public func deletingHTMLTags(_ tags: [String]) -> String {
+	func deletingHTMLTags(_ tags: [String]) -> String {
 		return tags.reduce(self) { $0.deletingHTMLTag($1) }
 	}
 }

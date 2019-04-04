@@ -198,8 +198,8 @@ extension Broadcaster: Hashable, CustomStringConvertible {
 	
 	// MARK: Hashable
 	
-	public var hashValue: Int {
-		return ObjectIdentifier(self).hashValue
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(ObjectIdentifier(self))
 	}
 	
 	// MARK: Equatable
@@ -214,7 +214,7 @@ extension Broadcaster: Hashable, CustomStringConvertible {
 		let subs = queue.sync { subscriptions }
 		
 		let strings = subs.map { sub in
-			(sub.subscriber === self) ? "\(sub.callback)" : "\(String(describing: sub.subscriber)) \(sub.callback)"
+			(sub.subscriber === self) ? "\(String(describing: sub.callback))" : "\(String(describing: sub.subscriber)) \(String(describing: sub.callback))"
 		}
 		let joined = strings.joined(separator: ", ")
 		

@@ -52,7 +52,7 @@ public extension SegueHandler where Self: UIViewController, SegueIdentifier.RawV
 	///	  - sender: The object that you want to use to initiate the segue. This
 	///				object is made available for informational purposes during
 	///				the actual segue.
-	public func performSegue(_ segueIdentifier: SegueIdentifier, sender: AnyObject?) {
+	func performSegue(_ segueIdentifier: SegueIdentifier, sender: AnyObject?) {
 		performSegue(withIdentifier: segueIdentifier.rawValue, sender: sender)
 	}
 	
@@ -62,7 +62,7 @@ public extension SegueHandler where Self: UIViewController, SegueIdentifier.RawV
 	/// - Parameter segue: The storyboard segue for which the corresponding
 	///					   segue identifier enum value is to be found.
 	/// - Returns: The `SegueIdentifier` enum value for the specified segue.
-	public func segueIdentifier(for segue: UIStoryboardSegue) -> SegueIdentifier {
+	func segueIdentifier(for segue: UIStoryboardSegue) -> SegueIdentifier {
 		guard let id = segue.identifier, let segueID = SegueIdentifier(rawValue: id) else {
 			fatalError("Invalid segue identifier '\(String(describing: segue.identifier))' for view controller of type '\(type(of: self))'.")
 		}

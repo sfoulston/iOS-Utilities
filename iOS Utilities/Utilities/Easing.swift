@@ -102,7 +102,7 @@ public struct Easing {
 
 public extension Easing {
 	
-	public static func exponentialEaseOutTimingFunction() -> CAMediaTimingFunction {
+	static func exponentialEaseOutTimingFunction() -> CAMediaTimingFunction {
 		return CAMediaTimingFunction(controlPoints: 0.15625, 0.99805, 0.3, 0.99219)
 	}
 }

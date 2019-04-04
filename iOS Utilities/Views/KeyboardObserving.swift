@@ -81,7 +81,7 @@ private extension KeyboardObserving {
 @available(iOS 11.0, *)
 public extension KeyboardObserving where Self: UIViewController {
 	
-	public func updateSafeArea(forKeyboardFrame keyboardFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve) {
+	func updateSafeArea(forKeyboardFrame keyboardFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve) {
 		// Calculate the intersection of the keyboard from with the existing safe area.
 		let keyboardFrameInView = view.convert(keyboardFrame, from: nil)
 		var safeAreaFrame = view.safeAreaLayoutGuide.layoutFrame

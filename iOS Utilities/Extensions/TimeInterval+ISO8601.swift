@@ -10,10 +10,10 @@ import Foundation
 
 public extension TimeInterval {
 	
-	public init?(iso8601Duration durationString: String) {
+	init?(iso8601Duration durationString: String) {
 		// Get the time part from ISO 8601 formatted duration.
 		// See: http://en.wikipedia.org/wiki/ISO_8601#Durations
-		guard let timeStartIndex = durationString.index(of: "T") else { return nil }
+		guard let timeStartIndex = durationString.firstIndex(of: "T") else { return nil }
 		let timeString = durationString[timeStartIndex...]
 		
 		let scanner = Scanner(string: String(timeString))

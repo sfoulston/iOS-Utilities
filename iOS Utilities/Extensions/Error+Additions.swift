@@ -10,7 +10,7 @@ import Foundation
 
 public extension Error {
 	
-	public var isNoNetworkConnectionError: Bool {
+	var isNoNetworkConnectionError: Bool {
 		switch (self as NSError).code {
 		case NSURLErrorTimedOut, NSURLErrorNetworkConnectionLost, NSURLErrorNotConnectedToInternet:
 			return true

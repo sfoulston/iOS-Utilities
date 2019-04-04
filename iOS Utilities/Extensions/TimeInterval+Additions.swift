@@ -10,11 +10,11 @@ import Foundation
 
 public extension TimeInterval {
 	
-	public var inThePast: Date {
+	var inThePast: Date {
 		return Date() - self
 	}
 	
-	public var inTheFuture: Date {
+	var inTheFuture: Date {
 		return Date() + self
 	}
 }
