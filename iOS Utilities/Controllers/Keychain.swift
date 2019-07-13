@@ -218,7 +218,7 @@ private extension Keychain {
 	// MARK: Error Handling
 	
 	struct Error {
-		static let Domain = "com.bywayEndeavors.LaughableKit.Keychain.error"
+		static let Domain = "com.sfoulston.Keychain.error"
 		
 		enum Code: Int {
 			case unableToClear = 1
